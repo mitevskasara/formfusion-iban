@@ -1,0 +1,38 @@
+{
+  "name": "@formfusion/iban",
+  "version": "1.0.0",
+  "description": "Set of validation rules for worldwide iban numbers used for the formfusion (form management & validation) library",
+  "private": false,
+  "scripts": {
+    "build": "find . -mindepth 1 -maxdepth 1 -type d ! -name 'node_modules' ! -name 'src' ! -name 'plugins' -exec sh -c 'find \"{}\" -type f -name \"*.js\" | read' \\; -exec rm -rf {} \\; && node esbuild.js",
+    "version": "conventional-changelog -p -i CHANGELOG.md -s -r 0",
+    "publish-package": "npm publish --access public"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/mitevskasara/formfusion-iban.git"
+  },
+  "keywords": [
+    "react",
+    "javascript",
+    "typescript",
+    "forms",
+    "validation",
+    "form-validation"
+  ],
+  "main": "index.js",
+  "module": "index.js",
+  "types": "index.d.ts",
+  "author": "Sara Mitevska",
+  "license": "BSD-2-Clause license",
+  "bugs": {
+    "url": "https://github.com/corelabui/formfusion/issues"
+  },
+  "homepage": "https://www.corelabui.com/formfusion",
+  "peerDependencies": {},
+  "devDependencies": {
+    "esbuild": "^0.18.10",
+    "react": "^18.2.0",
+    "react-dom": "^18.2.0"
+  }
+}
