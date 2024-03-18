@@ -85,7 +85,7 @@ declare module "@formfusion/iban" {
     [K in keyof T as K extends string ? Lowercase<K> : never]: T[K];
   };
 
-  type iban = LowercaseKeys<IbanPatterns>;
+  const iban: LowercaseKeys<IbanPatterns>;
 
   export = iban;
 }
